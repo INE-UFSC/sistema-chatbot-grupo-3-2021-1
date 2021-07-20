@@ -7,7 +7,7 @@ class BotFeliz(Bot):
 
     # nao esquecer o decorator
     def nome(self):
-        pass
+         return self.__nome
 
     # nao esquecer o decorator
     def nome(nome):
