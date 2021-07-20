@@ -19,7 +19,7 @@ class BotFeliz(Bot):
         return "Oiiii. Meu nome é {}. :)".format(self.__nome)
 
     def mostra_comandos(self):
-        return '1 - Bom dia', '2 - Qual seu nome?', '3 - Quero um conselho', '4 - Adeus'
+        return '1 - Bom dia \n2 - Qual seu nome? \n3 - Quero um conselho \n4 - Adeus'
     
     def executa_comando(self,cmd):
         if cmd == '1':
