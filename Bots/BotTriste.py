@@ -24,7 +24,7 @@ class BotTriste(Bot):
         if cmd == '1':
             return 'Estou sad hoje, nao é um bom dia'
         elif cmd == '2':
-            return self.apresentacao()
+            return 'Sou muito triste para falar novamente'
         elif cmd == '3':
             return 'Fique com os amigos, sempre ou vai ficar na bad igual a mim'
         else:
