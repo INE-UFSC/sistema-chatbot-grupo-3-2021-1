@@ -22,15 +22,15 @@ class SistemaChatBot:
         print(self.__bot.boas_vindas())
 
     def mostra_comandos_bot(self):
-        print("->", self.__bot.mostra_comandos())
+        print(self.__bot.mostra_comandos())
         self.le_envia_comando()
 
     def le_envia_comando(self):
         cmd = str(input("   -> Digite o comando: "))
         if cmd == '-1' or cmd == '4':
-            print(self.__bot.despedida())
+            print("->", self.__bot.despedida())
         else:
-            print(self.__bot.executa_comando(cmd))
+            print("->", self.__bot.executa_comando(cmd))
             self.mostra_comandos_bot()
 
     def inicio(self):
