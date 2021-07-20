@@ -19,15 +19,18 @@ class BotFeliz(Bot):
         return "Oiiii. Meu nome é {}. :)".format(self.__nome)
 
     def mostra_comandos(self):
-       
-        return "1 - Bom dia \n2 - Qual seu nome? \n3 - Quero um conselho \n4 - Adeus"
-
-    def executa_comando(self, cmd):
+        return '1 - Bom dia', '2 - Qual seu nome?', '3 - Quero um conselho', '4 - Adeus'
+    
+    def executa_comando(self,cmd):
         if cmd == '1':
-            return
-        
+            return 'Bom dia, Bom dia, o sol já nasceu lá na fazendinha.'
+        elif cmd == '2':
+            return BotFeliz.apresentcao()
+        elif cmd == '4':
+            return BotFeliz.despedida()
+        else:
+            return 'Ai amiguinho não tenho essa opção'        
        
-
     def boas_vindas(self):
         return "Seja bem vindesss :)"
 
