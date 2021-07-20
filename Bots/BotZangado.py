@@ -16,13 +16,13 @@ class BotZangado(Bot):
         return f'Sou o principe {self.__nome}, o que esta procurando aqui insolente!'
  
     def mostra_comandos(self):
-        return '1 - Bom dia', '2 - Qual seu nome?', '3 - Quero um conselho', '4 - Adeus'
+        return "1 - Bom dia \n2 - Como consigo um poder maior que 8000 \n3 - Quero um conselho \n4 - Adeus"
     
     def executa_comando(self,cmd):
         if cmd == '1':
             return 'Não devo bom dia para voce!'
         elif cmd == '2':
-            return 'Eu ja disse que sou o principe, voce tem obrigacao de me conhecer! insolente!'
+            return 'Isso é impossivel!'
         elif cmd == '3':
             return 'Treine incansavelmente todos os dias, e mesmo assim nao vai conseguir me superar' 
         else:
