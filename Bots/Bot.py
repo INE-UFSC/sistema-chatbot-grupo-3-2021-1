@@ -1,33 +1,35 @@
-##implemente as seguintes classes
+# implemente as seguintes classes
 
 from abc import ABC, abstractmethod
 import random as r
 
+
 class Bot(ABC):
 
-    def __init__(nome,):
+    def __init__(self, nome: str):
         self.nome = nome
         self.comandos = {}
 
-    #nao esquecer o decorator
+    @property
     def nome(self):
-        pass
+        return self.nome
 
-    #nao esquecer o decorator
-    def nome(nome):
-        pass
+    @nome.setter
+    def nome(self, nome):
+        self.nome = nome
 
     def mostra_comandos(self):
+        for key in self.comandos:
+            print(key, self.comandos[key])
+
+    @abstractmethod
+    def executa_comando(self, cmd):
         pass
 
     @abstractmethod
-    def executa_comando(self,cmd):
-        pass
-
-    @abstractmethod
-    def boas_vindas():
+    def boas_vindas(self):
         pass
     
     @abstractmethod
-    def despedida():
+    def despedida(self):
         pass

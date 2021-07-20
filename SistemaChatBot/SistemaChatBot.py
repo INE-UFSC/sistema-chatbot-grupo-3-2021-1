@@ -1,19 +1,19 @@
 from Bots.Bot import Bot
 
+
 class SistemaChatBot:
-    def __init__(self,nomeEmpresa,lista_bots):
-        self.__empresa=nomeEmpresa
-        ##verificar se a lista de bots contém apenas bots
-        self.__lista_bots=lista_bots
+    def __init__(self, nome_empresa: str, lista_bots: list):
+        self.__empresa = nome_empresa
+        self.__lista_bots = [bot for bot in lista_bots if type(bot) == Bot]
         self.__bot = None
     
     def boas_vindas(self):
-        pass
-        ##mostra mensagem de boas vindas do sistema
+        print("Seja bem-vindo(a) ao sistema Chat Bot da empresa", self.__empresa, end='\n\n')
 
     def mostra_menu(self):
-        pass
-        ##mostra o menu de escolha de bots
+        print("Os bots disponíveis são:")
+        for bot in self.__lista_bots:
+            print()
     
     def escolhe_bot(self):
         pass
