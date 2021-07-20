@@ -4,16 +4,16 @@ class BotZangado(Bot):
     def __init__(self,nome):
         self.__nome = nome
 
-    #nao esquecer o decorator
+    @property
     def nome(self):
-        pass
+        return self.__nome
 
-    #nao esquecer o decorator
-    def nome(nome):
-        pass
+    @nome.setter
+    def nome(nome, novo_nome):
+        self.__nome = novo_nome
 
     def apresentacao(self):
-        pass
+        return 'Sou o principe Vegeta, o que esta procurando aqui insolente!'
  
     def mostra_comandos(self):
         pass
@@ -22,7 +22,7 @@ class BotZangado(Bot):
         pass
 
     def boas_vindas(self):
-        pass
+        return 'Sou o principe dos saiyajins não devo boas vindas a voce'
 
     def despedida(self):
-        pass
+        return 'Adeus miseravel!'
