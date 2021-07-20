@@ -4,7 +4,7 @@ from Bots.Bot import Bot
 class SistemaChatBot:
     def __init__(self, nome_empresa: str, lista_bots: list):
         self.__empresa = nome_empresa
-        self.__lista_bots = lista_bots
+        self.__lista_bots = [bot for bot in lista_bots if isinstance(bot, Bot)]
         self.__bot = None
     
     def boas_vindas(self):
@@ -22,7 +22,7 @@ class SistemaChatBot:
         print(self.__bot.boas_vindas())
 
     def mostra_comandos_bot(self):
-        print(self.__bot.mostra_comandos())
+        print("->", self.__bot.mostra_comandos())
         self.le_envia_comando()
 
     def le_envia_comando(self):
