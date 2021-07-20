@@ -6,12 +6,14 @@ class BotFeliz(Bot):
         self.__nome = nome
 
     # nao esquecer o decorator
+    @property
     def nome(self):
          return self.__nome
 
     # nao esquecer o decorator
-    def nome(nome):
-        pass
+    @nome.setter
+    def nome(nome, novo_nome):
+        self.__nome = novo_nome
 
     def apresentacao(self):
         return "Oiiii. Meu nome é {}. :)".format(self.__nome)
