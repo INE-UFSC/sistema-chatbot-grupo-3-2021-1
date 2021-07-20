@@ -8,7 +8,7 @@ class Bot(ABC):
 
     def __init__(self, nome: str):
         self.nome = nome
-        self.comandos = {}
+        self.comandos = {'1': 'Bom dia', '2': 'Qual seu nome?', '3': 'Quero um conselho', '4': 'Adeus'}
 
     @property
     def nome(self):
