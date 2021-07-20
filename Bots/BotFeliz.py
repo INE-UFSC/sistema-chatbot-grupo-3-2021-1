@@ -25,11 +25,11 @@ class BotFeliz(Bot):
         if cmd == '1':
             return 'Bom dia, Bom dia, o sol já nasceu lá na fazendinha.'
         elif cmd == '2':
-            return BotFeliz.apresentcao()
+            return self.apresentcao()
         elif cmd == '3':
             return 'Não ligue para os outros, SEJA FELIZ'
         else:
-           return BotFeliz.despedida()         
+           return self.despedida()         
        
     def boas_vindas(self):
         return "Seja bem vindesss :)"
