@@ -9,24 +9,24 @@ class BotZangado(Bot):
         return self.__nome
 
     @nome.setter
-    def nome(nome, novo_nome):
+    def nome(self, novo_nome):
         self.__nome = novo_nome
 
     def apresentacao(self):
         return f'Sou o principe {self.__nome}, o que esta procurando aqui insolente!'
  
     def mostra_comandos(self):
-        return "1 - Bom dia \n2 - Como consigo um poder maior que 8000 \n3 - Quero um conselho \n4 - Adeus"
+        return "1 - Bom dia \n2 - Qual seu nome? \n3 - Quero um conselho \n4 - Adeus"
     
     def executa_comando(self,cmd):
         if cmd == '1':
             return 'Não devo bom dia para voce!'
         elif cmd == '2':
-            return 'Isso é impossivel!'
+            return 'Eu ja disse que sou o principe, voce tem obrigacao de me conhecer! insolente!'
         elif cmd == '3':
             return 'Treine incansavelmente todos os dias, e mesmo assim nao vai conseguir me superar' 
         else:
-            return BotZangado.despedida()
+            return self.despedida()
 
 
     def boas_vindas(self):
