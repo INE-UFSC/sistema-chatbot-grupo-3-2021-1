@@ -15,7 +15,7 @@ class BotTriste(Bot):
         self.__nome = novo_nome
 
     def apresentacao(self):
-        return 'Oi eu sou o Goku'
+        return 'Oi eu sou o Jorgin um gotico triste'
  
     def mostra_comandos(self):
         pass
@@ -24,10 +24,10 @@ class BotTriste(Bot):
         pass
 
     def boas_vindas(self):
-        return 'Bem vindo saiyajin'
+        return 'Bem vindo mas sei que vc ja vai'
 
     def despedida(self):
-        return 'Ate mais, nos encontraremos novamente!'
+        return 'Ate nunca mais!!'
 
     
     
