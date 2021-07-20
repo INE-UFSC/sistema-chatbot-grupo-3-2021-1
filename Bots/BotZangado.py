@@ -13,7 +13,7 @@ class BotZangado(Bot):
         self.__nome = novo_nome
 
     def apresentacao(self):
-        return 'Sou o principe Vegeta, o que esta procurando aqui insolente!'
+        return f'Sou o principe {self.__nome}, o que esta procurando aqui insolente!'
  
     def mostra_comandos(self):
         pass
