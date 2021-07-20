@@ -14,7 +14,7 @@ class BotFeliz(Bot):
         pass
 
     def apresentacao(self):
-        pass
+        return "Oii. Meu nome é {}. :)".format(self.__nome)
 
     def mostra_comandos(self):
         pass
@@ -23,7 +23,7 @@ class BotFeliz(Bot):
         pass
 
     def boas_vindas(self):
-        pass
+        return "Seja bem vindes :)"
 
     def despedida(self):
-        pass
+        return "Adeusinho. Vou sentir sua falta :)"
