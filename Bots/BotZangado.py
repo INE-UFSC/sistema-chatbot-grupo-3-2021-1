@@ -16,10 +16,18 @@ class BotZangado(Bot):
         return f'Sou o principe {self.__nome}, o que esta procurando aqui insolente!'
  
     def mostra_comandos(self):
-        pass
+        return '1 - Bom dia', '2 - Qual seu nome?', '3 - Quero um conselho', '4 - Adeus'
     
     def executa_comando(self,cmd):
-        pass
+        if cmd == '1':
+            return 'Não devo bom dia para voce!'
+        elif cmd == '2':
+            return 'Eu ja disse que sou o principe, voce tem obrigacao de me conhecer! insolente!'
+        elif cmd == '3':
+            return 'Treine incansavelmente todos os dias, e mesmo assim nao vai conseguir me superar' 
+        else:
+            return BotZangado.despedida()
+
 
     def boas_vindas(self):
         return 'Sou o principe dos saiyajins não devo boas vindas a voce'

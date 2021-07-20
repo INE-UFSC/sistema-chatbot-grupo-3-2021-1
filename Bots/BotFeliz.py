@@ -8,7 +8,7 @@ class BotFeliz(Bot):
     # nao esquecer o decorator
     @property
     def nome(self):
-         return self.__nome
+        return self.__nome
 
     # nao esquecer o decorator
     @nome.setter
