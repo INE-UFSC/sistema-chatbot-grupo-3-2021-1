@@ -25,7 +25,7 @@ class BotFeliz(Bot):
         if cmd == '1':
             return 'Bom dia, Bom dia, o sol já nasceu lá na fazendinha.'
         elif cmd == '2':
-            BotFeliz.apresentcao()
+            return BotFeliz.apresentcao()
         elif cmd == '4':
             return BotFeliz.despedida()
         else:
